@@ -2,12 +2,15 @@ package constanta
 
 const (
 
+	// // GETALLUSERS menampilkan semua data user
+	// GETALLUSERS = `SELECT user_id ,username,date_of_birth,no_ktp, j.job_name AS job, e.education_name AS last_education
+	// FROM user us
+	// JOIN job j ON j.job_id=us.job
+	// JOIN education e ON e.id=us.education
+	// ORDER BY 1;`
+
 	// GETALLUSERS menampilkan semua data user
-	GETALLUSERS = `SELECT user_id ,username,date_of_birth,no_ktp, j.job_name AS job, e.education_name AS last_education
-	FROM user us
-	JOIN job j ON j.job_id=us.job
-	JOIN education e ON e.id=us.education
-	ORDER BY 1;`
+	GETALLUSERS = `SELECT * FROM user ;`
 
 	// GETJOB menampilkan semua data job
 	GETJOB = `SELECT * FROM job ;`

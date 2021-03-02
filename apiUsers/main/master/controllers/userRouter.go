@@ -30,7 +30,7 @@ func UserController(r *mux.Router, service usecases.UserUseCase) {
 
 func (e UserHandler) ListUsers(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
-	fmt.Println(vars, "ok")
+	fmt.Println(vars, "GET LIST USER")
 
 	// log.Println(infinfoType)
 	currentDate := time.Now()
