@@ -9,7 +9,7 @@ const (
 	// JOIN education e ON e.id=us.education
 	// ORDER BY 1;`
 
-	// GETALLUSERS menampilkan semua data user
+	// GETALLUSERS menampilkan semua data user dengan format yang sudah ada
 	GETALLUSERS = `SELECT * FROM user ;`
 
 	// GETJOB menampilkan semua data job
